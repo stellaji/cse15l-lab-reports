@@ -10,7 +10,7 @@ This is a new file!
 
 [Link](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
-![Image](http://url/twice.jpg)
+![Image](https://koreajoongangdaily.joins.com/data/photo/2022/03/31/1f911700-a08a-4597-977b-8cf1fb1d067a.jpg)
 
 > This is the blockquote element
 
