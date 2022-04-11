@@ -40,8 +40,52 @@ Here is an example of some of the commands being used:
 *commands Screenshot:*
 ![Image](https://github.com/stellaji/cse15l-lab-reports/blob/main/commands%20Screenshot.png?raw=true)
 
+Another useful skill to learn is to **move files with `scp`**
+
+To do so, first if you are in the remote connection, enter `exit` to return to your own client.
+  
+Then, create a .java file that you will later move to the CSE server. Add a print statement and compile to make sure that it works correctly.
+  
+Next, use this command: `scp WhereAmI.java cs15lsp22zz@ieng6.ucsd.edu:~/` (make sure to substitute zz for your own account's letters)
+  
+You will again be prompted to input yes/no/fingerprint as well as your password. Go ahead an input yes and your password.
+  
+If everything works correctly, then your terminal should look something like this:
+  
 *scp Screenshot:*
 ![Image](https://github.com/stellaji/cse15l-lab-reports/blob/main/scp%20Screenshot.png?raw=true)
 
+By now, you may be frustrated by the repetitive asking of yes/no/fingerprint and your password. Don't worry, there is a way around it!
+
+This is called **ssh Keys**
+
+To do this, first make sure that you are on the client. If not, make sure to input `exit` to exit out of the server.
+  
+Then, input `ssh-keygen` to which you will see something like
+
+```
+Generating public/private rsa key pair.
+Enter file in which to save the key
+(/Users/<user-name>/.ssh/id_rsa): /Users/<user-name>/.ssh/id_rsa
+Enter passphrase (empty for no passphrase):
+```
+  
+You do not need to type anything, simply press the enter key on your keyboard, as you want there to be no passphrase.
+  
+Then, a randomart image will be generated.
+  
+The next step is to copy the public (*not* the private) key to your server.
+  
+To do so, you will first need to ssh into the server and create an .ssh directory. This will be the location that the public key will be copied into.
+
+You should input `mkdir .ssh` to create this directory. After doing so, exit the server.
+  
+Then, you will use the scp command to copy the public key over, which should look something like this: 
+`scp /Users/<user-name>/.ssh/id_rsa.pub cs15lsp22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys`
+  
+The whole process should look something like this:
+  
 *ssh keys Screenshot:*
 ![Image](https://github.com/stellaji/cse15l-lab-reports/blob/main/ssh%20keys%20Screenshot.png?raw=true)
+
+Lastly, we will try to **optimize remote running:**
