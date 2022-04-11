@@ -89,3 +89,15 @@ The whole process should look something like this:
 ![Image](https://github.com/stellaji/cse15l-lab-reports/blob/main/ssh%20keys%20Screenshot.png?raw=true)
 
 Lastly, we will try to **optimize remote running:**
+  
+There are many ways to make remote running a little simpler, with less lines. Here are some examples:
+ 
+* Use semicolons to run multiple commmands in one single line. Try: `cp demo.java copyOfDemo.java; javac copyOfDemo.java; java demo`
+* Write a command in quotes at the end of an ssh command to run it from your remote client server. Try: `ssh cs15lsp22zz@ieng6.ucsd.edu "ls"`
+
+Here is an example screenshot of those commands being run: 
+  
+*Optimizing Remote Running Screenshot*
+![Image](https://github.com/stellaji/cse15l-lab-reports/blob/main/Optimizing%20Remote%20Running.png?raw=true)
+  
+**Congratulations! You just finished Lab 1!**
