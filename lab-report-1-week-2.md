@@ -15,7 +15,9 @@ If you are using a Windows laptop, make sure to download [this](https://docs.mic
 
 Next, use the UCSD ETS Account Look-Up Tool [here](https://sdacs.ucsd.edu/~icc/index.php) to find the account you want to connect to.
 
-Then, open up the terminal in VSCode and type in this command, replacing the letters "zz" with that of your own account: `$ ssh cs15lsp22zz@ieng6.ucsd.edu`
+Then, open up the terminal in VSCode and type in this command, replacing the letters "zz" with that of your own account: 
+
+`$ ssh cs15lsp22zz@ieng6.ucsd.edu`
 
 You will probably be prompted to input yes/no/fingerprint, and yet again for your password. Go ahead and type yes and your password when asked.
 
@@ -57,7 +59,7 @@ If everything works correctly, then your terminal should look something like thi
 
 By now, you may be frustrated by the repetitive asking of yes/no/fingerprint and your password. Don't worry, there is a way around it!
 
-This is called **ssh Keys**
+This is called **ssh Keys:**
 
 To do this, first make sure that you are on the client. If not, make sure to input `exit` to exit out of the server.
   
@@ -81,6 +83,7 @@ To do so, you will first need to ssh into the server and create an .ssh director
 You should input `mkdir .ssh` to create this directory. After doing so, exit the server.
   
 Then, you will use the scp command to copy the public key over, which should look something like this: 
+  
 `scp /Users/<user-name>/.ssh/id_rsa.pub cs15lsp22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys`
   
 The whole process should look something like this:
@@ -92,8 +95,12 @@ Lastly, we will try to **optimize remote running:**
   
 There are many ways to make remote running a little simpler, with less lines. Here are some examples:
  
-* Use semicolons to run multiple commmands in one single line. Try: `cp demo.java copyOfDemo.java; javac copyOfDemo.java; java demo`
-* Write a command in quotes at the end of an ssh command to run it from your remote client server. Try: `ssh cs15lsp22zz@ieng6.ucsd.edu "ls"`
+* Use semicolons to run multiple commmands in one single line. Try: 
+  
+  `cp demo.java copyOfDemo.java; javac copyOfDemo.java; java demo`
+* Write a command in quotes at the end of an ssh command to run it from your remote client server. Try: 
+  
+  `ssh cs15lsp22zz@ieng6.ucsd.edu "ls"`
 
 Here is an example screenshot of those commands being run: 
   
