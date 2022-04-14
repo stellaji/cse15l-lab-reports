@@ -29,13 +29,13 @@ You then should see something like this, which means you are now connected to a 
 Then, you can start **trying some commands:**
 
 To help you out, here is a list of commands that you could try:
-* cd~
-* cd
-* ls -a
-* ls -lat
-* ls <directory> , make sure to replace <directory> with the directory you want to be in
-* cp 
-* cat 
+* `cd~`
+* `cd`
+* `ls -a`
+* `ls -lat`
+* `ls <directory>` , make sure to replace <directory> with the directory you want to be in
+* `cp` 
+* `cat` 
   
 Here is an example of some of the commands being used:
  
@@ -82,7 +82,7 @@ To do so, you will first need to ssh into the server and create an .ssh director
 
 You should input `mkdir .ssh` to create this directory. After doing so, exit the server.
   
-Then, you will use the scp command to copy the public key over, which should look something like this: 
+Then, you will use the `scp` command to copy the public key over, which should look something like this: 
   
 `scp /Users/<user-name>/.ssh/id_rsa.pub cs15lsp22zz@ieng6.ucsd.edu:~/.ssh/authorized_keys`
   
