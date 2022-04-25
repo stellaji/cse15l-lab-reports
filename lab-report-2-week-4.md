@@ -10,7 +10,7 @@ For this lab, I will detail 3 code changes that my lab group worked on in Lab 3 
 
 ![Image](https://github.com/stellaji/cse15l-lab-reports/blob/main/code%20change%201%20ss.png?raw=true)
 
-*Link to Failure-inducing Test*
+*Link to Failure-Inducing Test*
 
 See why this change needed to be made [here](https://github.com/stellaji/markdown-parser/blob/main/breaking1.md)
 
@@ -26,3 +26,37 @@ Before the change was made, the program would return an IndexOutOfBoundsExceptio
 ## Code Change 2
 
 *Screenshot*
+
+![Image](https://github.com/stellaji/cse15l-lab-reports/blob/main/code%20change%202%20ss.png?raw=true)
+
+*Link to Failure-Inducing Test*
+
+See why this change needed to be made [here](https://github.com/stellaji/markdown-parser/blob/main/breaking2.md)
+
+*System Output*
+
+See what the program outputed before this change was made (symptom):
+![Image](https://github.com/stellaji/cse15l-lab-reports/blob/main/symptom%202%20ss.png?raw=true)
+
+*Description*
+Before this change was made, the program would return an OutOfMemory error, signaling an infinite loop. This was evidently caused by an extra line at the end of the `breaking2.md` file. With the symptom being the infinite loop, the fail-inducing test shows the fault. Therefore, it is necessary to initialize a new variable named tempIndex that is set to 0. Using this newly-declared variable, the extra line will be addressed.
+
+## Code Change 3
+
+*Screenshot*
+
+![Image](https://github.com/stellaji/cse15l-lab-reports/blob/main/code%20change%203%20ss.png?raw=true)
+
+*Link to Failure-Inducing Test*
+
+See why this change needed to be made [here](https://github.com/stellaji/markdown-parser/blob/main/breaking3.md)
+
+*System Output*
+
+See what the program outputed before this change was made (symptom):
+
+![Image](https://github.com/stellaji/cse15l-lab-reports/blob/main/symptom%203%20ss.png?raw=true)
+
+*Description*
+
+Before this change was made, an extra link would be outputted. The bug is that I had declared a link an image, after declaring the same link as a link. The symptom is the extra link that was outputted by the program. Therefore, updating the code using an index for the exclamation mark of an image is necessary.
