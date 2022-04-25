@@ -1,4 +1,4 @@
-# This is Lab Report 2!
+# Lab Report 2, Week 4
 
 > Written by Stella Ji
 
