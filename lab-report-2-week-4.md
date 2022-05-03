@@ -59,4 +59,4 @@ See what the program outputed before this change was made (symptom):
 
 *Description*
 
-Before this change was made, an extra link would be outputted. The bug is that I had declared a link an image, after declaring the same link as a link. The symptom is the extra link that was outputted by the program. Therefore, updating the code using an index for the exclamation mark of an image is necessary.
+Before this change was made, an extra link would be outputted. The failure-inducing input is that I had declared a link an image, after declaring the same link as a link. The symptom is the extra link that was outputted by the program. Ultimately, the bug is that the program was initially unable to differentiate between an image and a link, causing it to read an image as two links due to the syntax. Therefore, updating the code using an index for the exclamation mark of an image is necessary.
