@@ -33,3 +33,7 @@ I then used the `scp` command coupled with the alias name to copy this file over
 In this screenshot, you can see that the `fileToBeCopiedOver.txt` file can now be found in my course-specific account:
 
 ![Image](https://github.com/stellaji/cse15l-lab-reports/blob/main/scp%20after%20streamlined%20ssh.png?raw=true)
+
+
+The next Group Choice was to **_Setup Github Access from ieng6_**
+
