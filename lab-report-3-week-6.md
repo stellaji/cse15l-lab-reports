@@ -22,3 +22,14 @@ Host ieng6
 This edited `config` file allows me to log into my course-specific account much faster using the command: `ssh ieng6` as shown by this screenshot:
 
 ![Image](https://github.com/stellaji/cse15l-lab-reports/blob/main/Streamline%20ssh%20Configuration.png?raw=true)
+
+This `ssh ieng6` command works because in the code block that I had added to the `config` file, I used the alias `ieng6` in the first line: `Host ieng6`
+
+To show an instance of this alias working, I created a new file in my own computer called `fileToBeCopiedOver.txt`. 
+
+I then used the `scp` command coupled with the alias name to copy this file over to my course-specific account. This was done by using the command: 
+`scp fileToBeCopiedOver.txt ieng6:~/`
+
+In this screenshot, you can see that the `fileToBeCopiedOver.txt` file can now be found in my course-specific account:
+
+![Image](https://github.com/stellaji/cse15l-lab-reports/blob/main/scp%20after%20streamlined%20ssh.png?raw=true)
