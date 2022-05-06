@@ -6,3 +6,5 @@ In this lab, we will go over the three Group Choice Options from Lab 5.
 
 First off, **_Streamlining ssh Configuration_**
 
+This is a screenshot of my config file, shown in VSCode:
+
