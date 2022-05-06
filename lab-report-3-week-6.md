@@ -4,5 +4,5 @@
 ---
 In this lab, we will go over the three Group Choice Options from Lab 5.
 
-First off, ## Streamlining ssh Configuration
+First off, **_Streamlining ssh Configuration_**
 
