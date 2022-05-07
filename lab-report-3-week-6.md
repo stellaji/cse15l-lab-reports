@@ -38,3 +38,17 @@ In this screenshot, you can see that the `fileToBeCopiedOver.txt` file can now b
 The next Group Choice was to **_Setup Github Access from ieng6_**
 
 Lastly, we will **_Copy Whole Directories with `scp -r`_**
+
+In this Group Choice, we use the `scp -r` to recursively copy an entire directory over to another location. Specifically, in this following screenshot, I copy the entire `markdown-parser` directory and use `scp -r` to copy it over to my `ieng6` account:
+
+![Image](https://github.com/stellaji/cse15l-lab-reports/blob/main/scp%20-r.png?raw=true)
+
+You can see that in my course-specific account, there is now a directory named `markdown-parser` that contains all the files and folders that the original directory (located on my own computer) had contained.
+
+Furthermore, I can use `ssh ieng6` to log on to my course-specific account and compile/run the tests for my `markdown-parser` repository. Because all the necessary files and folders are copied over and present, all of the tests should run without issue. You can see in this following screenshot that all my tests run fine:
+
+![Image](https://github.com/stellaji/cse15l-lab-reports/blob/main/running%20tests%20on%20ieng6.png?raw=true)
+
+We can also combine `scp`, `;`, and `ssh` to do the same thing and copy the whole directory, but all in one line!
+
+The command would look something like this: 
