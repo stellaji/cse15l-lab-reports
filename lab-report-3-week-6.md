@@ -37,3 +37,4 @@ In this screenshot, you can see that the `fileToBeCopiedOver.txt` file can now b
 
 The next Group Choice was to **_Setup Github Access from ieng6_**
 
+Lastly, we will **_Copy Whole Directories with `scp -r`_**
