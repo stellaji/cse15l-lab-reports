@@ -41,7 +41,7 @@ The next Group Choice was to **_Setup Github Access from ieng6_**
 
 Using the tutorial given in Lab 5, I generated and added new SSH keys so that I could use the git commands: `git commit` and `git push` from the `ieng6` server. 
 
-Below is a screenshot of my public key on my GitHub account after adding the new SSH key:
+Below is a screenshot of my public key, which I nicknamed My MacBook Pro, on my GitHub account after adding the new SSH key:
 
 ![Image](https://github.com/stellaji/cse15l-lab-reports/blob/main/public%20key%20on%20github.png?raw=true)
 
