@@ -76,3 +76,19 @@ Furthermore, I can use `ssh ieng6` to log on to my course-specific account and c
 We can also combine `scp`, `;`, and `ssh` to do the same thing and copy the whole directory, but all in one line!
 
 The command would look something like this: 
+
+```
+scp -r markdown-parser ieng6:markdown-parser; ssh ieng6 "cd markdown-parser; /software/CSE/oracle-java-17/jdk-17.0.1/bin/javac -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar MarkdownParseTest.java; /software/CSE/oracle-java-17/jdk-17.0.1/bin/java -cp .:lib/junit-4.13.2.jar:lib/hamcrest-core-1.3.jar org.junit.runner.JUnitCore MarkdownParseTest"
+```
+
+Here is a screenshot of that command working:
+
+![Image](https://github.com/stellaji/cse15l-lab-reports/blob/main/all%20in%20one%20line.png?raw=true)
+
+I had to change the `javac` to `/software/CSE/oracle-java-17/jdk-17.0.1/bin/javac` and `java` to `/software/CSE/oracle-java-17/jdk-17.0.1/bin/java` because the `ieng6` seemed to have been running an older version of Java. This change allows the program to compile and run smoothly as expected.
+
+As you can see though, utilizing `;` to have all commands on one line works just as well as having them on separate lines.
+
+---
+
+And with that, this concludes this Lab Report! Thank you for reading! ૮˶ᵔᵕᵔ˶ა
