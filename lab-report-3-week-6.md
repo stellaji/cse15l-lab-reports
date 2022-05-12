@@ -53,7 +53,7 @@ I have the public key, `id_rsa.pub` opened, while the private key, `id_rsa.pub` 
 
 Next, I cloned my `cse15l-lab-reports` repository to my `ieng6` account and made a change. I then committed the change and used the command: `git push origin main` to ensure that the new SSH keys are working properly. See the following screenshot to see it working correctly:
 
-![Image](https://github.com/stellaji/cse15l-lab-reports/blob/main/running%20tests%20on%20ieng6.png?raw=true)
+![Image](https://github.com/stellaji/cse15l-lab-reports/blob/main/running%20git%20commands.png?raw=true)
 
 You can see that after I use `git clone` to clone the repository, it shows up as a new directory on my `ieng6` account. I then enter `touch justForFun.txt` to create a new txt file. This is a new change, so when I enter `git status`, it will state that there has been a change that needs to be added/committed. Therefore, I enter `git add justForFun.txt` to add the change in the working directory to the staging area. Then, I enter `git commit -m "Added justForFun.txt"`, which commits the change with an additional descriptive message. Finally, because of the SSH keys I had created, I am able to push the changes directly from the command line by using `git push origin main`. 
 
